@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,28 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <header>
+      <h1>
+        Random Card Generator
+      </h1>
+    </header>
+    <main id="box">
+      <div id="top_icon" class="icon"></div>
+      <div id="center_num"></div>
+      <div id="down_icon" class="icon"></div>
+    </main>
+    <footer class="footer">
+      <p>¿No te gusto esta carta? ¡Modificala para conseguir otra!</p>
+      <button class="btn btn-primary" id="card_button">
+        Cambiar la carta
+      </button>
+      <button class="btn btn-primary" id="mod_w">Modificar el ancho</button>
+      <button class="btn btn-success hidden_w" id="mod_w_sum">+</button>
+      <button class="btn btn-danger hidden_w" id="mod_w_sub">-</button>
+
+      <button class="btn btn-primary" id="mod_h">Modificar la altura</button>
+      <button class="btn btn-success hidden_h" id="mod_h_sum">+</button>
+      <button class="btn btn-danger hidden_h" id="mod_h_sub">-</button>
+    </footer>
   </body>
 </html>
